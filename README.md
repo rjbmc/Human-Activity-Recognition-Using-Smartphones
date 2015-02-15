@@ -14,3 +14,5 @@ For naming the rest of columns, we read the "features.txt" file and put the seco
 We have got completed now the "obs" data frame, we select only the two first columns and those who containing "mean" or "std" in her names into a new data frame named "obs1".  
 
 To that frame we apply the "ddply" function, grouping by the two first columns and using the "numcolwise(mean)" function, wich calculate the average of each numeric column, giving another data frame (obs2) having the wanted data.
+
+Each row in this data frame contains the average value, by subject and activity, of each measured parameter. Thus, they are normalized and bounded within [-1, 1]  like the original data.
